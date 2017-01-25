@@ -2,6 +2,7 @@ extend:
   - ../../common_plot.yaml
 
 q:
+  func: plot_rad2deg
   data:
     - { log: RobotHardware0_q, column: [0-33] }
 

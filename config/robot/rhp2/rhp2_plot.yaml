@@ -1,10 +1,10 @@
 extend:
   - ../../common_plot.yaml
 
-RHP2(Robot)0_q:
+q:
   data:
-    - { log: RHP2(Robot)0_q, column: [0-33] }
+    - { log: RobotHardware0_q, column: [0-33] }
 
-RHP2(Robot)0_tau:
+tau:
   data:
-    - { log: RHP2(Robot)0_tau, column: [0-33] }
+    - { log: RobotHardware0_tau, column: [0-33] }

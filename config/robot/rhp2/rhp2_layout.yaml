@@ -1,0 +1,102 @@
+main:
+  # joint angles of rleg:
+  #   legends:
+  #     - { key: RHP2(Robot)0_q, id: [0], label: R_CROTCH_Y }
+  #     - { key: RHP2(Robot)0_q, id: [1], label: R_CROTCH_P }
+  #     - { key: RHP2(Robot)0_q, id: [2], label: R_CROTCH_R }
+  #     - { key: RHP2(Robot)0_q, id: [3], label: R_KNEE_P }
+  #     - { key: RHP2(Robot)0_q, id: [4], label: R_ANKLE_R }
+  #     - { key: RHP2(Robot)0_q, id: [5], label: R_ANKLE_P }
+  #   # newline: False
+
+  # joint angles of lleg:
+  #   legends:
+  #     - { key: RHP2(Robot)0_q, id: [6], label: L_CROTCH_Y }
+  #     - { key: RHP2(Robot)0_q, id: [7], label: L_CROTCH_P }
+  #     - { key: RHP2(Robot)0_q, id: [8], label: L_CROTCH_R }
+  #     - { key: RHP2(Robot)0_q, id: [9], label: L_KNEE_P }
+  #     - { key: RHP2(Robot)0_q, id: [10], label: L_ANKLE_R }
+  #     - { key: RHP2(Robot)0_q, id: [11], label: L_ANKLE_P }
+  #   # newline: False
+
+  # joint_torque of rleg:
+  #   legends:
+  #     - { key: RHP2(Robot)0_tau, id: [0], label: R_CROTCH_Y }
+  #     - { key: RHP2(Robot)0_tau, id: [1], label: R_CROTCH_P }
+  #     - { key: RHP2(Robot)0_tau, id: [2], label: R_CROTCH_R }
+  #     - { key: RHP2(Robot)0_tau, id: [3], label: R_KNEE_P }
+  #     - { key: RHP2(Robot)0_tau, id: [4], label: R_ANKLE_R }
+  #     - { key: RHP2(Robot)0_tau, id: [5], label: R_ANKLE_P }
+  #   # newline: False
+
+  # joint_torque of lleg:
+  #   legends:
+  #     - { key: RHP2(Robot)0_tau, id: [6], label: L_CROTCH_Y }
+  #     - { key: RHP2(Robot)0_tau, id: [7], label: L_CROTCH_P }
+  #     - { key: RHP2(Robot)0_tau, id: [8], label: L_CROTCH_R }
+  #     - { key: RHP2(Robot)0_tau, id: [9], label: L_KNEE_P }
+  #     - { key: RHP2(Robot)0_tau, id: [10], label: L_ANKLE_R }
+  #     - { key: RHP2(Robot)0_tau, id: [11], label: L_ANKLE_P }
+  #   # newline: False
+
+  joint angle of right arm:
+    legends:
+      - { key: RHP2(Robot)0_q, id: [18], label: R_COLLAR_Y }
+      - { key: RHP2(Robot)0_q, id: [19], label: R_SHOULDER_P }
+      - { key: RHP2(Robot)0_q, id: [20], label: R_SHOULDER_R }
+      - { key: RHP2(Robot)0_q, id: [21], label: R_SHOULDER__Y }
+      - { key: RHP2(Robot)0_q, id: [22], label: R_ELBOW_P }
+      - { key: RHP2(Robot)0_q, id: [23], label: R_WRIST_R }
+      - { key: RHP2(Robot)0_q, id: [24], label: R_WRIST_P }
+      - { key: RHP2(Robot)0_q, id: [25], label: R_WRIST_Y }
+    # newline: False
+
+  joint angle of left arm:
+    legends:
+      - { key: RHP2(Robot)0_q, id: [26], label: L_COLLAR_Y }
+      - { key: RHP2(Robot)0_q, id: [27], label: L_SHOULDER_P }
+      - { key: RHP2(Robot)0_q, id: [28], label: L_SHOULDER_R }
+      - { key: RHP2(Robot)0_q, id: [29], label: L_SHOULDER_Y }
+      - { key: RHP2(Robot)0_q, id: [30], label: L_ELBOW_P }
+      - { key: RHP2(Robot)0_q, id: [31], label: L_WRIST_R }
+      - { key: RHP2(Robot)0_q, id: [32], label: L_WRIST_P }
+      - { key: RHP2(Robot)0_q, id: [33], label: L_WRIST_Y }
+
+  #   # newline: False
+
+  joint torque of right arm:
+    legends:
+      - { key: RHP2(Robot)0_tau, id: [18], label: R_COLLAR_Y }
+      - { key: RHP2(Robot)0_tau, id: [19], label: R_SHOULDER_P }
+      - { key: RHP2(Robot)0_tau, id: [20], label: R_SHOULDER_R }
+      - { key: RHP2(Robot)0_tau, id: [21], label: R_SHOULDER__Y }
+      - { key: RHP2(Robot)0_tau, id: [22], label: R_ELBOW_P }
+      - { key: RHP2(Robot)0_tau, id: [23], label: R_WRIST_R }
+      - { key: RHP2(Robot)0_tau, id: [24], label: R_WRIST_P }
+      - { key: RHP2(Robot)0_tau, id: [25], label: R_WRIST_Y }
+    # newline: False
+
+  joint torque of left arm:
+    legends:
+      - { key: RHP2(Robot)0_tau, id: [26], label: L_COLLAR_Y }
+      - { key: RHP2(Robot)0_tau, id: [27], label: L_SHOULDER_P }
+      - { key: RHP2(Robot)0_tau, id: [28], label: L_SHOULDER_R }
+      - { key: RHP2(Robot)0_tau, id: [29], label: L_SHOULDER_Y }
+      - { key: RHP2(Robot)0_tau, id: [30], label: L_ELBOW_P }
+      - { key: RHP2(Robot)0_tau, id: [31], label: L_WRIST_R }
+      - { key: RHP2(Robot)0_tau, id: [32], label: L_WRIST_P }
+      - { key: RHP2(Robot)0_tau, id: [33], label: L_WRIST_Y }
+
+  imu_gsensor:
+    legends:
+      - { key: imu_gsensor, id: [0], label: x }
+      - { key: imu_gsensor, id: [1], label: y }
+      - { key: imu_gsensor, id: [2], label: z }
+
+  kf_rpy:
+    legends:
+      - { key: kf_rpy, id: [0], label: roll }
+      - { key: kf_rpy, id: [1], label: pitch }
+      - { key: kf_rpy, id: [2], label: yaw }
+    # newline: False
+

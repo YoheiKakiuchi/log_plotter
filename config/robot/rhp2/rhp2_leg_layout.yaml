@@ -1,0 +1,69 @@
+main:
+  joint angles of rleg:
+    left_label: angle [degree]
+    legends:
+      - { key: q, id: [0], label: R_CROTCH_Y }
+      - { key: q, id: [1], label: R_CROTCH_P }
+      - { key: q, id: [2], label: R_CROTCH_R }
+      - { key: q, id: [3], label: R_KNEE_P }
+      - { key: q, id: [4], label: R_ANKLE_R }
+      - { key: q, id: [5], label: R_ANKLE_P }
+  cylinder length of rleg:
+    left_label: length [m]
+    legends:
+      - { key: cta_q, id: [0], label: RC-CI-linear-joint }
+      - { key: cta_q, id: [1], label: RC-CO-linear-joint }
+      - { key: cta_q, id: [2], label: RC-K-linear-joint }
+      - { key: cta_q, id: [3], label: RC-AI-linear-joint }
+      - { key: cta_q, id: [4], label: RC-AO-linear-joint }
+  # cylinder velocity of rleg:
+  #   legends:
+  #     - { key: cta_dq, id: [0], label: RC-CI-linear-joint }
+  #     - { key: cta_dq, id: [1], label: RC-CO-linear-joint }
+  #     - { key: cta_dq, id: [2], label: RC-K-linear-joint }
+  #     - { key: cta_dq, id: [3], label: RC-AI-linear-joint }
+  #     - { key: cta_dq, id: [4], label: RC-AO-linear-joint }
+  cylinder force (current) of rleg:
+    left_label: current [A]
+    legends:
+      - { key: cta_tau, id: [0], label: RC-CI-linear-joint }
+      - { key: cta_tau, id: [1], label: RC-CO-linear-joint }
+      - { key: cta_tau, id: [2], label: RC-K-linear-joint }
+      - { key: cta_tau, id: [3], label: RC-AI-linear-joint }
+      - { key: cta_tau, id: [4], label: RC-AO-linear-joint }
+  # joint angles of lleg:
+  #   legends:
+  #     - { key: cta_q, id: [6],  label: L_CROTCH_Y }
+  #     - { key: cta_q, id: [7],  label: L_CROTCH_P }
+  #     - { key: cta_q, id: [8],  label: L_CROTCH_R }
+  #     - { key: cta_q, id: [9],  label: L_KNEE_P }
+  #     - { key: cta_q, id: [10], label: L_ANKLE_R }
+  #     - { key: cta_q, id: [11], label: L_ANKLE_P }
+  # cylinder length of lleg:
+  #   legends:
+  #     - { key: cta_q, id: [39], label: LC-CI-linear-joint }
+  #     - { key: cta_q, id: [40], label: LC-CO-linear-joint }
+  #     - { key: cta_q, id: [41], label: LC-K-linear-joint }
+  #     - { key: cta_q, id: [42], label: LC-AI-linear-joint }
+  #     - { key: cta_q, id: [43], label: LC-AO-linear-joint }
+  # cylinder torque(current) of lleg:
+  #   legends:
+  #     - { key: cta_tau, id: [39], label: LC-CI-linear-joint }
+  #     - { key: cta_tau, id: [40], label: LC-CO-linear-joint }
+  #     - { key: cta_tau, id: [41], label: LC-K-linear-joint }
+  #     - { key: cta_tau, id: [42], label: LC-AI-linear-joint }
+  #     - { key: cta_tau, id: [43], label: LC-AO-linear-joint }
+  imu_gsensor:
+    left_label: acceleration [m/s^2]
+    legends:
+      - { key: imu_gsensor, id: [0], label: x }
+      - { key: imu_gsensor, id: [1], label: y }
+      - { key: imu_gsensor, id: [2], label: z }
+  kf_rpy:
+    left_label: angle [degree]
+    legends:
+      - { key: kf_rpy, id: [0], label: roll }
+      - { key: kf_rpy, id: [1], label: pitch }
+      - { key: kf_rpy, id: [2], label: yaw }
+  # newline: False
+

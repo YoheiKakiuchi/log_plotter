@@ -1,44 +1,4 @@
 main:
-  # joint angles of rleg:
-  #   legends:
-  #     - { key: q, id: [0], label: R_CROTCH_Y }
-  #     - { key: q, id: [1], label: R_CROTCH_P }
-  #     - { key: q, id: [2], label: R_CROTCH_R }
-  #     - { key: q, id: [3], label: R_KNEE_P }
-  #     - { key: q, id: [4], label: R_ANKLE_R }
-  #     - { key: q, id: [5], label: R_ANKLE_P }
-  #   # newline: False
-
-  # joint angles of lleg:
-  #   legends:
-  #     - { key: q, id: [6], label: L_CROTCH_Y }
-  #     - { key: q, id: [7], label: L_CROTCH_P }
-  #     - { key: q, id: [8], label: L_CROTCH_R }
-  #     - { key: q, id: [9], label: L_KNEE_P }
-  #     - { key: q, id: [10], label: L_ANKLE_R }
-  #     - { key: q, id: [11], label: L_ANKLE_P }
-  #   # newline: False
-
-  # joint_torque of rleg:
-  #   legends:
-  #     - { key: tau, id: [0], label: R_CROTCH_Y }
-  #     - { key: tau, id: [1], label: R_CROTCH_P }
-  #     - { key: tau, id: [2], label: R_CROTCH_R }
-  #     - { key: tau, id: [3], label: R_KNEE_P }
-  #     - { key: tau, id: [4], label: R_ANKLE_R }
-  #     - { key: tau, id: [5], label: R_ANKLE_P }
-  #   # newline: False
-
-  # joint_torque of lleg:
-  #   legends:
-  #     - { key: tau, id: [6], label: L_CROTCH_Y }
-  #     - { key: tau, id: [7], label: L_CROTCH_P }
-  #     - { key: tau, id: [8], label: L_CROTCH_R }
-  #     - { key: tau, id: [9], label: L_KNEE_P }
-  #     - { key: tau, id: [10], label: L_ANKLE_R }
-  #     - { key: tau, id: [11], label: L_ANKLE_P }
-  #   # newline: False
-
   joint angle of right arm:
     left_label: joint angle [degree]
     legends:
@@ -47,9 +7,9 @@ main:
       - { key: q, id: [20], label: R_SHOULDER_R }
       - { key: q, id: [21], label: R_SHOULDER__Y }
       - { key: q, id: [22], label: R_ELBOW_P }
-      - { key: q, id: [23], label: R_WRIST_R }
-      - { key: q, id: [24], label: R_WRIST_P }
-      - { key: q, id: [25], label: R_WRIST_Y }
+#      - { key: q, id: [23], label: R_WRIST_R }
+#      - { key: q, id: [24], label: R_WRIST_P }
+#      - { key: q, id: [25], label: R_WRIST_Y }
     # newline: False
 
   joint angle of left arm:
@@ -60,9 +20,9 @@ main:
       - { key: q, id: [28], label: L_SHOULDER_R }
       - { key: q, id: [29], label: L_SHOULDER_Y }
       - { key: q, id: [30], label: L_ELBOW_P }
-      - { key: q, id: [31], label: L_WRIST_R }
-      - { key: q, id: [32], label: L_WRIST_P }
-      - { key: q, id: [33], label: L_WRIST_Y }
+#      - { key: q, id: [31], label: L_WRIST_R }
+#      - { key: q, id: [32], label: L_WRIST_P }
+#      - { key: q, id: [33], label: L_WRIST_Y }
 
   #   # newline: False
 
@@ -74,9 +34,9 @@ main:
       - { key: tau, id: [20], label: R_SHOULDER_R }
       - { key: tau, id: [21], label: R_SHOULDER__Y }
       - { key: tau, id: [22], label: R_ELBOW_P }
-      - { key: tau, id: [23], label: R_WRIST_R }
-      - { key: tau, id: [24], label: R_WRIST_P }
-      - { key: tau, id: [25], label: R_WRIST_Y }
+#      - { key: tau, id: [23], label: R_WRIST_R }
+#      - { key: tau, id: [24], label: R_WRIST_P }
+#      - { key: tau, id: [25], label: R_WRIST_Y }
     # newline: False
 
   joint torque of left arm:
@@ -87,9 +47,9 @@ main:
       - { key: tau, id: [28], label: L_SHOULDER_R }
       - { key: tau, id: [29], label: L_SHOULDER_Y }
       - { key: tau, id: [30], label: L_ELBOW_P }
-      - { key: tau, id: [31], label: L_WRIST_R }
-      - { key: tau, id: [32], label: L_WRIST_P }
-      - { key: tau, id: [33], label: L_WRIST_Y }
+#      - { key: tau, id: [31], label: L_WRIST_R }
+#      - { key: tau, id: [32], label: L_WRIST_P }
+#      - { key: tau, id: [33], label: L_WRIST_Y }
 
   imu_gsensor:
     left_label: acceleration [m/s^2]

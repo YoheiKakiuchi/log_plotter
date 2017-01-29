@@ -4,8 +4,39 @@ extend:
 q:
   func: plot_rad2deg
   data:
-    - { log: RobotHardware0_q, column: [0-33] }
-
+    - { log: cta_q, column: [0-33] }
+dq:
+  func: plot_rad2deg
+  data:
+    - { log: cta_dq, column: [0-33] }
+q_ref:
+  func: plot_rad2deg
+  data:
+    - { log: el_q, column: [0-33] }
 tau:
   data:
-    - { log: RobotHardware0_tau, column: [0-33] }
+    - { log: cta_tau, column: [0-33] }
+#atc_q:
+#  func: plot_rad2deg
+#  data:
+#    - { log: atc_q, column: [0-33] }
+### simulation
+RHP2(Robot)0_q:
+  data:
+    - { log: RHP2(Robot)0_q, column: [0-33] }
+RHP2(Robot)0_tau:
+  data:
+    - { log: RHP2(Robot)0_tau, column: [0-33] }
+### real robot (cylinder)
+cta_q:
+  data:
+    - { log: cta_q, column: [34-52] }
+cta_dq:
+  data:
+    - { log: cta_dq, column: [34-52] }
+cta_tau:
+  data:
+    - { log: cta_tau, column: [34-52] }
+q_len_ref:
+  data:
+    - { log: el_q, column: [34-52] }

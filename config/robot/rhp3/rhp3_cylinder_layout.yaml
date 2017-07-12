@@ -14,16 +14,16 @@ main:
 
   lleg cylinder:
     legends:
-      - { key: RobotHardware0_q_lin, id: [32], label: crotch-inner }
-      - { key: RobotHardware0_q_lin, id: [33], label: crotch-outer }
-      - { key: RobotHardware0_q_lin, id: [34], label: knee }
-      - { key: RobotHardware0_q_lin, id: [35], label: ankle-inner }
-      - { key: RobotHardware0_q_lin, id: [36], label: ankle-outer }
-      - { key: atc_q, id: [32], label: ref crotch-inner}
-      - { key: atc_q, id: [33], label: ref crotch-outer}
-      - { key: atc_q, id: [34], label: ref knee }
-      - { key: atc_q, id: [35], label: ref ankle-inner }
-      - { key: atc_q, id: [36], label: ref ankle-outer }
+      - { key: RobotHardware0_q_lin, id: [37], label: crotch-inner }
+      - { key: RobotHardware0_q_lin, id: [38], label: crotch-outer }
+      - { key: RobotHardware0_q_lin, id: [39], label: knee }
+      - { key: RobotHardware0_q_lin, id: [40], label: ankle-inner }
+      - { key: RobotHardware0_q_lin, id: [41], label: ankle-outer }
+      - { key: atc_q, id: [37], label: ref crotch-inner}
+      - { key: atc_q, id: [38], label: ref crotch-outer}
+      - { key: atc_q, id: [39], label: ref knee }
+      - { key: atc_q, id: [40], label: ref ankle-inner }
+      - { key: atc_q, id: [41], label: ref ankle-outer }
 
   rarm cylinder:
     legends:

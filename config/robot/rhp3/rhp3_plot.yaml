@@ -24,6 +24,9 @@ RobotHardware0_q:
 RobotHardware0_q_lin:
   data:
     - { log: RobotHardware0_q, column: [0-50] }
+RobotHardware0_dq_lin:
+  data:
+    - { log: RobotHardware0_dq, column: [0-50] }
 
 RobotHardware0_tau:
   data:
@@ -36,6 +39,18 @@ atc_q:
 cta_q:
   data:
     - { log: cta_q, column: [0-50] }
+
+cta_tau:
+  data:
+    - { log: cta_tau, column: [0-50] }
+
+vs_vrhsensor:
+  data:
+    - { log: vs_vrhsensor, column: [0-5] }
+
+vs_vlhsensor:
+  data:
+    - { log: vs_vlhsensor, column: [0-5] }
 
 rh_st_diff:
   func: plot_rh_q_st_q
@@ -106,6 +121,7 @@ watt:
   data:
     - { log: RobotHardware0_dq, column: [0,1,2,3,4,5]  }
     - { log: RobotHardware0_tau, column: [0,1,2,3,4,5] }
+
 ServoState:
   func: plot_servostate
   data:
@@ -120,7 +136,6 @@ ServoState:
   func: plot_80V
   data:
     - { log: RobotHardware0_servoState, column: [0,1,2,3,4,5] }
-
 
 st_zmp:
   data:

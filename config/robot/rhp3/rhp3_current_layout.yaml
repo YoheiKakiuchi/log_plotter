@@ -71,14 +71,14 @@ main:
 
   current:
     legends:
-      - { key: RobotHardware0_tau, id: [32], label: hip-innner }
-      - { key: RobotHardware0_tau, id: [33], label: hip-outer  }
-      - { key: RobotHardware0_tau, id: [34], label: knee }
+#      - { key: RobotHardware0_tau, id: [32], label: hip-innner }
+#      - { key: RobotHardware0_tau, id: [33], label: hip-outer  }
+#      - { key: RobotHardware0_tau, id: [34], label: knee }
 #      - { key: RobotHardware0_tau, id: [35], label: ankle-innner }
 #      - { key: RobotHardware0_tau, id: [36], label: ankle-outer  }
       - { key: RobotHardware0_tau, id: [44], label: elbow }
-#      - { key: RobotHardware0_tau, id: [46], label: wrist-inner }
-#      - { key: RobotHardware0_tau, id: [47], label: wrist-outer }
+      - { key: RobotHardware0_tau, id: [46], label: wrist-inner }
+      - { key: RobotHardware0_tau, id: [47], label: wrist-outer }
       - { key: RobotHardware0_tau, id: [42], label: waist right}
       - { key: RobotHardware0_tau, id: [43], label: waist left }
       - { key: RobotHardware0_tau, id: [16], label: shoulder roll/pitch}

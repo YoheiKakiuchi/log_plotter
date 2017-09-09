@@ -4,70 +4,50 @@ extend:
 sh_qOut:
   func: plot_rad2deg
   data:
-    - { log: sh_qOut, column: [0-50] }
+    - { log: sh_qOut, column: [0-31] }
 
 abc_q:
   func: plot_rad2deg
   data:
-    - { log: abc_q, column: [0-50] }
+    - { log: abc_q, column: [0-31] }
 
 st_q:
   func: plot_rad2deg
   data:
-    - { log: st_q, column: [0-50] }
+    - { log: st_q, column: [0-31] }
 
 RobotHardware0_q:
   func: plot_rad2deg
   data:
-    - { log: RobotHardware0_q, column: [0-50] }
+    - { log: RobotHardware0_q, column: [0-31] }
 
 RobotHardware0_q_lin:
   data:
-    - { log: RobotHardware0_q, column: [0-50] }
-RobotHardware0_dq_lin:
-  data:
-    - { log: RobotHardware0_dq, column: [0-50] }
+    - { log: RobotHardware0_q, column: [0-31] }
 
 RobotHardware0_tau:
   data:
-    - { log: RobotHardware0_tau, column: [0-50] }
-
-RobotHardware0_current:
-  func: plot_current
-  data:
-    - { log: RobotHardware0_servoState, column: [0-50] }
+    - { log: RobotHardware0_tau, column: [0-31] }
 
 atc_q:
   data:
-    - { log: atc_q, column: [0-50] }
+    - { log: atc_q, column: [0-31] }
 
 cta_q:
   data:
-    - { log: cta_q, column: [0-50] }
-
-cta_tau:
-  data:
-    - { log: cta_tau, column: [0-50] }
-
-vs_vrhsensor:
-  data:
-    - { log: vs_vrhsensor, column: [0-5] }
-
-vs_vlhsensor:
-  data:
-    - { log: vs_vlhsensor, column: [0-5] }
+    - { log: cta_q, column: [0-31] }
 
 rh_st_diff:
   func: plot_rh_q_st_q
   data:
-    - { log: RobotHardware0_q, column: [0-50] }
-    - { log: st_q, column: [0-50] }
+    - { log: RobotHardware0_q, column: [0-31] }
+    - { log: st_q, column: [0-31] }
 
 abs_enc_diff:
   func: plot_abs_enc
   data:
-    - { log: RobotHardware0_servoState, column: [0-50] }
-    - { log: RobotHardware0_servoState, column: [0-50] }
+    - { log: RobotHardware0_servoState, column: [0-31] }
+    - { log: RobotHardware0_servoState, column: [0-31] }
 
 rmfo_off_rfsensor:
   data:
@@ -126,7 +106,6 @@ watt:
   data:
     - { log: RobotHardware0_dq, column: [0,1,2,3,4,5]  }
     - { log: RobotHardware0_tau, column: [0,1,2,3,4,5] }
-
 ServoState:
   func: plot_servostate
   data:
@@ -141,6 +120,7 @@ ServoState:
   func: plot_80V
   data:
     - { log: RobotHardware0_servoState, column: [0,1,2,3,4,5] }
+
 
 st_zmp:
   data:

@@ -69,7 +69,8 @@ class LogPlotter(object):
                 # add graph
                 plot_item = self.view.addPlot(viewBox = pyqtgraph.ViewBox(border = pyqtgraph.mkPen(color='k', width=2)))
                 self.legend_list[graph_row].append([])
-                plot_item.setTitle(title+" "+ (str(j) if group_len != 1 else ""))
+                if group['title']:
+                    plot_item.setTitle(title+" "+ (str(j) if group_len != 1 else ""))
                 plot_item.showGrid(x=True, y=True, alpha=1)
                 if group.has_key('downsampling'):
                     plot_item.setDownsampling(ds = group['downsampling'].get('ds', 100),
@@ -406,6 +407,12 @@ def main():
     else:
         signal.signal(signal.SIGINT, signal.SIG_DFL)
         pyqtgraph.Qt.QtGui.QApplication.instance().exec_()
+
+def plot_with_log_plotter(fname, plot_conf_name, layout_conf_name, title):
+    app = pyqtgraph.Qt.QtGui.QApplication([])
+    lp = LogPlotter(fname, plot_conf_name, layout_conf_name, title)
+    lp.main()
+    pyqtgraph.Qt.QtGui.QApplication.instance().exec_()
 
 if __name__ == '__main__':
     main()

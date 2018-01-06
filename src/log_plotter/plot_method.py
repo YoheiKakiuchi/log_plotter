@@ -38,7 +38,7 @@ class PlotMethod(object):
             return state
         vfr = numpy.vectorize(RePack)
         plot_item.plot(times, vfr(data_dict[logs[0]][:, (PlotMethod.urata_len+1) * log_cols[0] + (0+0)]),
-                       pen=pyqtgraph.mkPen('r', width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+                       pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
     def plot_commnormal(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
@@ -75,12 +75,12 @@ class PlotMethod(object):
     @staticmethod
     def plot_abs_enc(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         plot_item.plot(times, [math.degrees(x) for x in data_dict[logs[0]][:, (PlotMethod.urata_len+1) * log_cols[0] + (6+1)]],
-                       pen=pyqtgraph.mkPen('g', width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+                       pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
     def plot_rh_q_st_q(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         plot_item.plot(times, [math.degrees(x) for x in (data_dict[logs[1]][:, log_cols[1]] - data_dict[logs[0]][:, log_cols[0]])],
-                       pen=pyqtgraph.mkPen('r', width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+                       pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
     def plot_rad2deg(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
@@ -96,6 +96,11 @@ class PlotMethod(object):
         plot_item.plot(times, watt,pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key, fillLevel=0, fillBrush=PlotMethod.linetypes["color"][i])
 
     @staticmethod
+    def plot_rad2deg_vel(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
+        data = [math.degrees(x) for x in numpy.diff(data_dict[logs[0]][:, log_cols[0]])/numpy.diff(times)]
+        plot_item.plot(times, numpy.append(data,[0]), pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+
+    @staticmethod
     def plot_diff(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         data_minuend = data_dict[logs[0]][:, log_cols[0]]
         data_subtrahend = data_dict[logs[1]][:, log_cols[1]]
@@ -105,7 +110,7 @@ class PlotMethod(object):
     @staticmethod
     def plot_rad2deg_diff(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         plot_item.plot(times, [math.degrees(x) for x in (data_dict[logs[1]][:, log_cols[1]] - data_dict[logs[0]][:, log_cols[0]])],
-                       pen=pyqtgraph.mkPen('r', width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+                       pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
     def plot_comp(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):

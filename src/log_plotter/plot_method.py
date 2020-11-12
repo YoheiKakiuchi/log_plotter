@@ -56,8 +56,12 @@ class PlotMethod(object):
         PlotMethod.__plot_urata_servo(plot_item, times, data_dict, logs, log_cols, cur_col, key, i, 2)
 
     @staticmethod
-    def plot_current(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
+    def plot_motor_output(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         PlotMethod.__plot_urata_servo(plot_item, times, data_dict, logs, log_cols, cur_col, key, i, 1)
+
+    @staticmethod
+    def plot_current(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
+        PlotMethod.__plot_urata_servo(plot_item, times, data_dict, logs, log_cols, cur_col, key, i, 12)
 
     @staticmethod
     def plot_motor_temp(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
